@@ -3,6 +3,8 @@
 
 This is a personal website with 3 pages, a home page, projects page and contact page [**currently does not work for sending emails**]. Some photos of the website is as below, it features some responsive design for smaller screens (phones, tablets). 
 
+![Screenshot of Website image](https://github.com/qiaoen17/Personal-Website/blob/main/images/Website.png)
+
 To start the website on visual studio code, navigate to the HTML folder and enter:
 ```
 start homePage.html
