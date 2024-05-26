@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.jpg);
+}
+
+#container {
+    height: 50vh;
+    top: 0;
+    width: 100vw;
+}
+
+/* Reset margin for the unordered list inside the navbar */
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+/* Add some styling for better visualization */
+#navbar {
+  /*background-color: #333;*/
+  background-color: orange;
+  opacity: 0.75;
+  color: white;
+  padding: 10px;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar li {
+  display: inline;
+  font-size: large;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+  position: relative; /* for the underline to reference */
+  transition: text-decoration 1s ease;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+#project-banner {
+    background-image: url('../images/SETA.png');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    transition: background-image 0.5s;
+}
+
+#project-banner > h2 {
+    color: white;
+}
+
+#project-banner > p {
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+#circles {
+    position: relative;
+    padding-top: 10%;
+    padding-left: 45%;
+}
+
+.fa-circle {
+    color: white;
+}
+
+.fa-circle-o {
+    color: white;
+}
+
+article {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 200px;
+    height: auto;
+}

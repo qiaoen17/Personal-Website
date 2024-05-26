@@ -1,0 +1,40 @@
+<!--Add code for sticky navbar here-->
+
+<!--Navbar should have Home, Projects, Contact Us -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/contactPage.css">
+        <script src="../JS/contactPage.js"></script>
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <div id="container">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="projectsPage.html">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <span id="typing-animation"></span>
+        </div>
+        <div id="form">
+            <form action="process_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#container {
+    height: 20vh;
+    top: 0;
+}
+
+/* Reset margin for the unordered list inside the navbar */
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+/* Add some styling for better visualization */
+#navbar {
+  /*background-color: #333;*/
+  background-color: orange;
+  opacity: 0.75;
+  color: white;
+  padding: 10px;
+  width: 100vw;
+
+  top: 0px;
+  position: sticky;
+}
+
+#navbar li {
+  display: inline;
+  font-size: large;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+  position: relative; /* for the underline to reference */
+  transition: text-decoration 1s ease;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    height: 30vh;
+    width: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+.project-card:hover {
+  opacity: 1; 
+}
+
+#chess-game {
+  background-image: url('../images/chess-game.jpg');
+}
+
+#kiwi-bot {
+  background-image: url('../images/kiwi-bot.jpg');
+}
+
+#captcha-cancer {
+  background-image: url("../images/captcha-cancer.png");
+}
+
+#SETA {
+  background-image: url('../images/SETA.png');
+}
+
+#hangman-game {
+  background-image: url('../images/hangman-game.jpg');
+}
+
+#photo-gallery {
+  background-image: url('../images/photo-gallery.png');
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+.project-description > p {
+  color: white;
+  font-size: 15px;
+
+}
+
+.project-description > a {
+  color: blue;
+  font-size: 10px;
+  margin-bottom: 2%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background-image: url(../images/background.jpg);
+    column-gap: 1vw;
+    row-gap: 10px;
+    align-content: space-evenly;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* Add media queries for smaller devices */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: auto;
+  }
+
+  .project-card {
+      width: 80vw;
+      height: 25vh;
+  }
+
+  #navbar li {
+      display: block;
+      font-size: medium;
+  }
+
+  #navbar {
+      padding: 5px;
+  }
+
+  #navbar a {
+      padding: 5px 10px;
+      font-size: smaller;
+  }
+}
+
+/* Add media queries for medium devices */
+
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: auto auto;
+  }
+
+  .project-card {
+      width: 45vw;
+      height: 25vh;
+  }
+
+  #navbar li {
+      display: inline-block;
+      font-size: large;
+  }
+
+  #navbar {
+      padding: 8px;
+  }
+
+  #navbar a {
+      padding: 6px 12px;
+      font-size: medium;
+  }
+}
